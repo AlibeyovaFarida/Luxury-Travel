@@ -1,0 +1,77 @@
+{
+  "HeaderComponent": {
+    "contact": "Contact us",
+    "navbarItem1": "Main",
+    "navbarItem2": "Services",
+    "navbarItem3": "About us",
+    "navbarItem4": "Tours",
+    "navbarItem5": "Countries",
+    "navbarItem6": "Contact"
+  },
+  "MainComponent": {
+    "mottoFirstSentence": "Reach your dream destination with confidence",
+    "mottoSecondSentence": "will make your trip enjoyable!",
+    "advantage1": "Visa support",
+    "advantage2": "Cheap tickets",
+    "advantage3": "Luxury tours",
+    "advantage4": "Quality hotels"
+  },
+  "ServicesComponent": {
+    "title": "Our services",
+    "description": "We provide you with full professional support"
+  },
+  "ServicesCardComponent": {
+    "title1": "Outgoing",
+    "description1": "Booking and selling air tickets, booking luxury hotels, using our accommodation services in internal and external VIP spaces, your trip can be made more convenient, reliable and comfortable.",
+    "title2": "Cruise",
+    "description2": "With cruise travel arrangements, port services, ship tours, we guarantee your travel plan and provide an unforgettable sea adventure. We offer you luxury ideas and the highest possible level of service.",
+    "title3": "Transfer",
+    "description3": "Travel Transfer provides a safe, fast and convenient transportation experience. Mainly pre-booked private transport, transfer service and private drivers reduce your travel stress and provide customers with the best possible relaxation. Booking transfer services is quite easy.",
+    "title4": "Visa Service",
+    "description4": "Our visa services include Schengen, Business, Education and Sports visas. We follow your visa request according to the purpose of travel and provide you with a transparent process of obtaining it.",
+    "title5": "Insurance Service",
+    "description5": "Traveling is a wonderful experience to discover new places, get to know cultures and collect memories. However, no matter how perfect your plans, unexpected circumstances can always arise. In such cases, travel insurance comes in handy; protects your travels from hazards and protects you against potential risks.",
+    "title6": "Group Tours",
+    "description6": "Traveling in a group gives a person the opportunity to get acquainted with new experiences and observe different places of the world. One advantage of travel groups is, of course, the opportunity to meet new people. These people will have different backgrounds and cultures, so dialogue with them brings new ideas and perspectives."
+  },
+  "AboutComponent": {
+    "title": "About us",
+    "description": "It has been the first choice of those who choose luxury and comfort. Our 13 years of experience in the travel sector, customer satisfaction and quality feedback are our contribution to the service. Our ultimate goal is to create a meaningful, personalized and luxurious vacation experience with you. Every year, 'Luxury Travel' organizes foreign trips for tourists and welcomes international guests as well.",
+    "advantage1": "Professional staff",
+    "advantage2": "+1500 successful visa",
+    "advantage3": "Affordable Prices",
+    "advantage4": "Quick Hotel Reservation",
+    "advantage5": "Foreign partners",
+    "advantage6": "Customer convenience",
+    "experiencePart1": "We have",
+    "experiencePart2": "years of",
+    "experiencePart3": "Experience",
+    "suggestionTitle": "Get a free visa assessment"
+  },
+  "ToursComponents": {
+    "title": "Tours",
+    "subtitle": "Travel with Group Tours",
+    "description": "Offering a wide range of services that include many special services, we provide you with various options to tailor your vacation plan according to your wishes and requirements.",
+    "statistic1": "Successful visa",
+    "statistic2": "Luxury Hotels",
+    "statistic3": "Happy Customer",
+    "statistic4": "Premium Tours"
+  },
+  "SliderComponent": {
+    "title": "Tour packages",
+    "subtitle1": "Classic",
+    "slide1_1": "Dubai",
+    "slide1_2": "Egypt",
+    "slide1_3": "Montenegro",
+    "slide1_4": "Doha",
+    "subtitle2": "The Address of Romance",
+    "slide2_1": "France",
+    "slide2_2": "Venice",
+    "subtitle3": "The Magnificent Duo",
+    "slide3_1": "Antalya",
+    "slide3_2": "Izmir",
+    "subtitle4": "3 Steps",
+    "slide4_1": "Berlin",
+    "slide4_2": "Paris"
+  }
+}

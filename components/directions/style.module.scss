@@ -1,0 +1,71 @@
+.directions {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .directions {
+    margin-top: 100px;
+    padding: 0 144px;
+    max-width: 1202px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    row-gap: 20px;
+    .direction-card {
+      position: relative;
+      .direction-card-image {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s linear;
+        img {
+          opacity: 0.4;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.3s linear;
+        }
+      }
+      .direction-card-desc {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        h3 {
+          color: #fff;
+          font-size: 28.8px;
+          font-weight: 700;
+        }
+      }
+    }
+    .direction-card:hover {
+      .direction-card-image {
+        background-color: transparent;
+        img {
+          opacity: 1;
+        }
+      }
+      .direction-card-desc {
+        button {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .directions {
+    .direction-card {
+      .direction-card-desc {
+        h3 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.contact {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1172px;
+  padding: 0 10px;
+  .contact-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .contact-data-text {
+      h4 {
+        font-size: 13px;
+        font-weight: 600;
+        background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      h2 {
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      p {
+        display: none;
+      }
+    }
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      li,
+      li > a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        span {
+          color: #020d19;
+          font-size: 13px;
+          font-weight: 400;
+        }
+        img{
+            width: 16px;
+            height: 16px;
+        }
+      }
+    }
+  }
+  .location {
+    width: 100%;
+    height: 247px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 430px) {
+  .contact {
+    padding: 0 48px;
+    .contact-data {
+      .contact-data-text {
+        h4 {
+          font-size: 19.2px;
+        }
+        h2 {
+          font-size: 38.4px;
+        }
+        p {
+          margin-bottom: 38px;
+          display: block;
+          color: #000;
+          font-size: 16px;
+          font-weight: 400;
+          opacity: 0.5;
+        }
+      }
+      .contact-links {
+        gap: 20px;
+        li,
+        li > a {
+          span {
+            font-size: 19.2px;
+          }
+          img{
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+    .location {
+      height: 489px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .contact {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 144px;
+    .contact-data {
+      width: 50%;
+      .contact-data-text {
+        h4 {
+          font-size: 19.2px;
+        }
+        h2 {
+          font-size: 38.4px;
+        }
+        p {
+          margin-bottom:0px;
+          font-size: 12.8px;
+          opacity: 1;
+        }
+      }
+    }
+    .location {
+      width: 50%;
+      height: auto;
+    }
+  }
+}

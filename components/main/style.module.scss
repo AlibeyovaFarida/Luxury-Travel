@@ -1,0 +1,83 @@
+.main {
+  display: none;
+}
+@media (min-width: 430px) {
+  .main {
+    position: relative;
+    margin-top: 5vh;
+    background-image: url("../../assets/Main.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    padding: 0 6%;
+    align-items: flex-start;
+    .company-desc {
+      max-width: 1536px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .motto {
+        font-size: 32px;
+        text-align: left;
+        font-weight: 700;
+        color: #ffffff;
+        .gold {
+          background: linear-gradient(to right, #cca34e, #cca44f);
+          -webkit-background-clip: text;
+          color: transparent;
+        }
+      }
+      .advantages-list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        .advantage {
+          font-size: 16px;
+          font-weight: 600;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          img{
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    align-items: center;
+    .company-desc {
+      .motto {
+        font-size: 48px;
+        text-align: center;   
+      }
+      .advantages-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .advantage {
+          font-size: 19.2px;
+          img{
+            width: 19.2px;
+            height: 19.2px;
+          }
+        }
+      }
+    }
+    .modal-button{
+      display: none;
+      align-self: flex-start;
+    }
+  }
+}

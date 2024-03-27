@@ -1,0 +1,77 @@
+{
+  "HeaderComponent": {
+    "contact": "Əlaqə saxlayın",
+    "navbarItem1": "Əsas",
+    "navbarItem2": "Xidmətlər",
+    "navbarItem3": "Haqqımızda",
+    "navbarItem4": "Turlar",
+    "navbarItem5": "Ölkələr",
+    "navbarItem6": "Əlaqə"
+  },
+  "MainComponent": {
+    "mottoFirstSentence": "Xəyal etdiyiniz yerə inamla çatın",
+    "mottoSecondSentence": "ilə xoş səyahətlərdən həzz alın!",
+    "advantage1": "Viza dəstəyi",
+    "advantage2": "Ucuz biletlər",
+    "advantage3": "Lüks turlar",
+    "advantage4": "Keyfiyyətli otellər"
+  },
+  "ServicesComponent": {
+    "title": "Xidmətlərimiz",
+    "description": "Biz sizə tam peşəkar dəstək veririk"
+  },
+  "ServicesCardComponent": {
+    "title1": "Outgoing",
+    "description1": "Aviabiletlərin rezervasiyası və satışı, lyuks otellərin bronlaşdırılması, daxili və xarici VIP məkanlarda yerləşdirmə xidmətlərimizdən istifadə edərək, səyahətinizi daha rahat, etibarlı və komfortlu bir şəkildə edə bilərsiniz.",
+    "title2": "Kruiz",
+    "description2": "Kruiz səyahətinin təşkili, liman xidmətləri, gəmi turları ilə səyahət planınızı zəmanətləyir və unudulmaz bir dəniz macərası təmin edirik . Sizə lyuks təsəvvürlər və mümkün olan ən yüksək səviyyədə xidmətlər təklif edirik.",
+    "title3": "Transfer",
+    "description3": "Səyahət transferi, təhlükəsiz, sürətli və rahat bir nəqliyyat təcrübəsi təmin edir. Əsasən öncədən rezervasiya olunan xüsusi nəqliyyat, transfer servisi və şəxsi sürücülərlə səyahət stresinizi azaldır və müştərilərə ən yaxşı istirahət imkanını verir. Transfer xidmətlərini rezerv etmək olduqca asandır.",
+    "title4": "Viza Xidməti",
+    "description4": "Viza xidmətlərimizə Şengen, İşgüzar, Təhsil və İdman vizalarını daxil edirik. Səyahət məqsədinə uyğun viza sorğunuzu izləyir və alınması prosesini şəffaf şəkildə aparılmasında sizə xidmət göstəririk.",
+    "title5": "Sığorta Xidməti",
+    "description5": "Səyahət etmək, yeni məkanları kəşf etmək, mədəniyyətləri tanımaq və xatirələr toplamaq üçün gözəl bir təcrübədir. Lakin, planlarınızın necə mükəmməl olarsa olsun, gözlənilməz hallar həmişə ortaya çıxa bilər. Belə hallarda səyahət sığortası faydalı olur; səyahətlərinizi təhlükələrdən qoruyur və sizi potensial risklərə qarşı müdafiə edir.",
+    "title6": "Qrup Turları",
+    "description6": "Qrup şəklində seyahət etmək insanı yeni təcrübələrlə tanış etmək və dünyanın müxtəlif məkanlarını müşahidə etmək imkanı verir.Seyahət qruplarının bir üstünlüyü, təbii ki, yeni insanlarla tanış olmaq imkanıdır. Bu insanlar müxtəlif mənşəyə və mədəniyyətə malik olarlar, buna görə də onlarla dialoq yeni fikirlər və baxış bucaqları gətirir."
+  },
+  "AboutComponent": {
+    "title": "Haqqımızda",
+    "description": "Lüks və rahatlığı seçənlərin ilk seçimi olmuşdur. 13 illik səyahət sektoru ilə bağlı təcrübəmiz, müştəri məmnuniyyəti və keyfiyyətə rəyi xidmətə olan qatqımızdır . Bizim əsas məqsədimiz, sizinlə birgə mənalı, şəxsiyyətləndirilmiş və lyuks tətil təcrübəsi yaratmaqdır. Hər il, 'Luxury Travel', turistlərin xarici səfərlərini təşkil edir və beynəlxalq qonaqları da qarşılayır.",
+    "advantage1": "Peşəkar işçilər",
+    "advantage2": "+1500 uğurlu viza",
+    "advantage3": "Sərfəli Qiymətlər",
+    "advantage4": "Tez Otel Rezervasyonu",
+    "advantage5": "Xarici tərəfdaşlar",
+    "advantage6": "Müştəri rahatlığı",
+    "experiencePart1": "Bizim",
+    "experiencePart2": "illik",
+    "experiencePart3": "Təcrübəmiz var",
+    "suggestionTitle": "Pulsuz viza qiymətləndirməsini əldə edin"
+  },
+  "ToursComponents": {
+    "title": "Turlar",
+    "subtitle": "Qrup Turları ilə Səyahət",
+    "description": "Bir çox xüsusi xidmətləri əhatə edən geniş bir xidmət spektrını təklif edir, tətil planınızı sizin istəklərinizə və tələblərinizə uyğun şəkildə tənzimləmək üçün sizə müxtəlif seçimlər təqdim edirik.",
+    "statistic1": "Uğurlu viza",
+    "statistic2": "Lüks Oteller",
+    "statistic3": "Xoşbəxt Müştəri",
+    "statistic4": "Premium Turlar"
+  },
+  "SliderComponent":{
+    "title": "Tur paketləri",
+    "subtitle1": "Klassika",
+    "slide1_1": "Dubay",
+    "slide1_2": "Misir",
+    "slide1_3": "Monteneqro",
+    "slide1_4": "Doha",
+    "subtitle2": "Romantikanın Ünvanı",
+    "slide2_1": "Fransa",
+    "slide2_2": "Venesiya",
+    "subtitle3": "Möhtəşəm İkili",
+    "slide3_1": "Antalya",
+    "slide3_2": "İzmir",
+    "subtitle4": "3 Addım",
+    "slide4_1": "Berlin",
+    "slide4_2": "Paris"
+  }
+}

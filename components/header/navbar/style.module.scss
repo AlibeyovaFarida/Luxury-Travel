@@ -1,0 +1,32 @@
+.navbar {
+  display: none;
+}
+@media (min-width: 744px) {
+  .navbar {
+    display: block;
+    .navbar-list {
+      max-width: 512px;
+      display: flex;
+      gap: 22px;
+      .list-item {
+        a {
+          color: #ffffff;
+          font-size: 12.8px;
+          font-weight: 700;
+        }
+      }
+      .list-item:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .navbar {
+    .navbar-list {
+      .list-item:nth-child(5) {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.language-change{
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    height: fit-content;   
+    button{
+        background-color: transparent;
+        border: none;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .selected-language{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 8px 10px;
+    }
+    .unselected-language{
+        display: none;
+        padding: 0px 10px 11px;
+    }
+}

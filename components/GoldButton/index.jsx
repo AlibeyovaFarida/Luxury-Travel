@@ -1,16 +1,18 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import Popup from "../popup";
 import styles from "./style.module.scss";
 const GoldButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const t = useTranslations("GoldButtonComponent");
   const showModal = () => {
     setIsModalOpen(true);
   };
   return (
     <>
       <button className={styles["gold-button"]} onClick={showModal}>
-        Əlaqə Saxlayın
+        {t("title")}
       </button>
       ;
       {isModalOpen && (

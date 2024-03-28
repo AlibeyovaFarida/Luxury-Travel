@@ -3,17 +3,17 @@ import React, { useRef, useState } from "react";
 import { Button, Modal } from "antd";
 import { DatePicker, Form, Input, Select } from "antd";
 import "./style.scss";
+import { t } from "i18next";
+import { useTranslations } from "next-intl";
 
 const Popup = ({ isModalOpen, setIsModalOpen }) => {
   const formRef = useRef();
-
+  const t = useTranslations("FormComponent");
   const validatePhoneNumber = (_, value) => {
     return new Promise((resolve, reject) => {
       const phoneNumberRegex = /^\+\d{3} \(\d{2}\) \d{3}-\d{2}-\d{2}$/;
       if (!phoneNumberRegex.test(value)) {
-        reject(
-          "Please input a valid phone number in the format +000 (00) 000-00-00"
-        );
+        reject(t("phoneInputValidation"));
       } else {
         resolve();
       }
@@ -22,14 +22,14 @@ const Popup = ({ isModalOpen, setIsModalOpen }) => {
 
   const validateCountry = (_, value) => {
     if (!value) {
-      return Promise.reject("Please select a country");
+      return Promise.reject(t("countryInputValidation"));
     }
     return Promise.resolve();
   };
 
   const validateDate = (_, value) => {
     if (!value) {
-      return Promise.reject("Please select a date");
+      return Promise.reject(t("dateInputValidation"));
     }
     return Promise.resolve();
   };
@@ -55,7 +55,7 @@ const Popup = ({ isModalOpen, setIsModalOpen }) => {
           }}
         >
           <Form.Item
-            label="Mobil nömrə"
+            label={t("phoneLabel")}
             name="Input"
             rules={[
               {
@@ -76,7 +76,7 @@ const Popup = ({ isModalOpen, setIsModalOpen }) => {
           </Form.Item>
 
           <Form.Item
-            label="Ölkə"
+            label={t("countryLabel")}
             name="Select"
             rules={[
               {
@@ -85,7 +85,7 @@ const Popup = ({ isModalOpen, setIsModalOpen }) => {
             ]}
           >
             <Select
-              placeholder="Ölkəni seç"
+              placeholder={t("countryPlaceholder")}
               style={{
                 width: "100%",
                 height: "55px",
@@ -100,7 +100,7 @@ const Popup = ({ isModalOpen, setIsModalOpen }) => {
           </Form.Item>
 
           <Form.Item
-            label="Bu tarixdən"
+            label={t("dateLabel")}
             name="DatePicker"
             rules={[
               {
@@ -109,7 +109,7 @@ const Popup = ({ isModalOpen, setIsModalOpen }) => {
             ]}
           >
             <DatePicker
-              placeholder="Tarixi seç"
+              placeholder={t("datePlaceholder")}
               style={{
                 width: "100%",
                 backgroundColor: "transparent",
@@ -134,7 +134,7 @@ const Popup = ({ isModalOpen, setIsModalOpen }) => {
                 background: "linear-gradient(90deg, #694323 0%, #CCA44F 100%)",
               }}
             >
-              Göndər
+              {t("submit")}
             </Button>
           </Form.Item>
         </Form>

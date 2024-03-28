@@ -21,7 +21,7 @@ import Izmir from '../../assets/Izmir.svg'
 import Doha from '../../assets/doha-slider.svg'
 import Berlin from '../../assets/Berlin.svg'
 import Paris from "../../assets/Paris.svg"
-import Venedic from '../../assets/Venedic.svg'
+import Venedic from '../../assets/Venedic.jpg'
 import { useTranslations } from "next-intl"
 const Slider = () => {
   const t = useTranslations("SliderComponent");
@@ -89,19 +89,19 @@ const Slider = () => {
             </div>
             <div className="slide1-images">
               <div>
-                <Image src={Dubai} />
+                <Image src={Dubai} alt="Dubai" />
                 <h3>{t("slide1_1")}</h3>
               </div>
               <div>
-                <Image src={Egypt} />
+                <Image src={Egypt} alt="Egypt" />
                 <h3>{t("slide1_2")}</h3>
               </div>
               <div>
-                <Image src={Montenegro} />
+                <Image src={Montenegro} alt="Montenegro" />
                 <h3>{t("slide1_3")}</h3>
               </div>
               <div>
-                <Image src={Doha} />
+                <Image src={Doha} alt="Doha" />
                 <h3>{t("slide1_4")}</h3>
               </div>
             </div>
@@ -115,11 +115,11 @@ const Slider = () => {
             </div>
             <div className="slide2-images">
               <div>
-                <Image src={France} />
+                <Image src={France} alt="France" />
                 <h3>{t("slide2_1")}</h3>
               </div>
               <div>
-                <Image src={France} />
+                <Image src={Venedic} alt="Venedic" />
                 <h3>{t("slide2_2")}</h3>
               </div>
             </div>
@@ -133,11 +133,11 @@ const Slider = () => {
             </div>
             <div className="slide3-images">
               <div>
-                <Image src={Antalya} />
+                <Image src={Antalya} alt="Antalya" />
                 <h3>{t("slide3_1")}</h3>
               </div>
               <div>
-                <Image src={Izmir} />
+                <Image src={Izmir} alt="Izmir" />
                 <h3>{t("slide3_2")}</h3>
               </div>
             </div>
@@ -151,11 +151,11 @@ const Slider = () => {
             </div>
             <div className="slide4-images">
               <div>
-                <Image src={Berlin} />
+                <Image src={Berlin} alt="Berlin" />
                 <h3>{t("slide4_1")}</h3>
               </div>
               <div>
-                <Image src={Paris} />
+                <Image src={Paris} alt="Paris" />
                 <h3>{t("slide4_2")}</h3>
               </div>
             </div>

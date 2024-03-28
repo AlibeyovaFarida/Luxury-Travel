@@ -41,8 +41,8 @@ const Services = () => {
       <h4 className={styles["services-title"]}>{t("title")}</h4>
       <h2 className={styles["services-motto"]}>{t("description")}</h2>
       <div className={styles["services-list"]}>
-        {servicesData.map((service) => {
-          return <ServicesCard service={service} />;
+        {servicesData.map((service, index) => {
+          return <ServicesCard service={service} key={index} />;
         })}
       </div>
     </div>

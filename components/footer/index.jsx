@@ -5,7 +5,9 @@ import Link from 'next/link';
 import Whatsapp from '../../assets/whatsapp-icon.svg'
 import Instagram from '../../assets/footer-instagram-icon.svg'
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 const Footer = () => {
+  const t = useTranslations("FooterComponent");
   return (
     <div className={styles.footer}>
       <div className={styles["footer-content"]}>
@@ -15,7 +17,7 @@ const Footer = () => {
           </div>
           <div className={styles["footer-details"]}>
             <div className={styles["contact-us"]}>
-              <h6>Contact us</h6>
+              <h6>{t("title")}</h6>
               <div>
                 <span>+994 (55) 203-43-33</span>
                 <Link href="mailto: info@luxurytravel.az">
@@ -26,8 +28,12 @@ const Footer = () => {
             <div className={styles["find-us"]}>
               <h6>Find us</h6>
               <div>
-                <p>Mehdi mehdizadə küçəsi 8, Baku,{<br />} Azerbaijan</p>
-                <span>Everyday from 10 am to 8 pm</span>
+                <p>
+                  {t("locationPart1")}
+                  {<br />}
+                  {t("locationPart2")}
+                </p>
+                <span>{t("clock")}</span>
               </div>
               <div className={styles["social-media"]}>
                 <Link href="https://api.whatsapp.com/send/?phone=994552034333">

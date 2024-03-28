@@ -25,9 +25,9 @@ const About = () => {
         </div>
         <div className={styles["about-desc-advantages"]}>
           <ul className={styles["about-advantages-list"]}>
-            {aboutDescAdvantages.map((advantage) => {
+            {aboutDescAdvantages.map((advantage, index) => {
               return (
-                <li className={styles["advantage-item"]}>
+                <li className={styles["advantage-item"]} key={index}>
                   <Image src={TickIcon} alt="tick-icon" />
                   <h5>{advantage}</h5>
                 </li>

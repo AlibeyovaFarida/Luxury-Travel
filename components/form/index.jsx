@@ -2,15 +2,15 @@
 import React, { useRef } from 'react'
 import { DatePicker, Form, Input, Select, Button } from "antd";
 import './style.scss'
+import { useTranslations } from 'next-intl';
 const FormComponent = () => {
+    const t = useTranslations("FormComponent");
     const formRef = useRef();
     const validatePhoneNumber = (_, value) => {
       return new Promise((resolve, reject) => {
         const phoneNumberRegex = /^\+\d{3} \(\d{2}\) \d{3}-\d{2}-\d{2}$/;
         if (!phoneNumberRegex.test(value)) {
-          reject(
-            "Please input"
-          );
+          reject(t("phoneInputShortValidation"));
         } else {
           resolve();
         }
@@ -18,13 +18,13 @@ const FormComponent = () => {
     };
     const validateCountry = (_, value) => {
       if (!value) {
-        return Promise.reject("Please select a country");
+        return Promise.reject(t("countryInputValidation"));
       }
       return Promise.resolve();
     };
     const validateDate = (_, value) => {
       if (!value) {
-        return Promise.reject("Please select a date");
+        return Promise.reject(t("dateInputValidation"));
       }
       return Promise.resolve();
     };
@@ -37,10 +37,10 @@ const FormComponent = () => {
         ref={formRef}
         layout="vertical"
         onFinish={handleFinish}
-        className='desktop'
+        className="desktop"
       >
         <Form.Item
-          label="Mobil nömrə"
+          label={t("phoneLabel")}
           name="Input"
           rules={[
             {
@@ -48,9 +48,7 @@ const FormComponent = () => {
             },
           ]}
         >
-          <Input
-            placeholder="+000 (00) 000-00-00"
-          />
+          <Input placeholder="+000 (00) 000-00-00" />
         </Form.Item>
         <div
           className="line"
@@ -62,7 +60,7 @@ const FormComponent = () => {
           }}
         ></div>
         <Form.Item
-          label="Ölkə"
+          label={t("countryLabel")}
           name="Select"
           rules={[
             {
@@ -70,9 +68,7 @@ const FormComponent = () => {
             },
           ]}
         >
-          <Select
-            placeholder="Ölkəni seç"
-          >
+          <Select placeholder={t("countryPlaceholder")}>
             <Select.Option value="Azerbaijan">Azerbaijan</Select.Option>
             <Select.Option value="Turkey">Turkey</Select.Option>
             <Select.Option value="Maldives">Maldives</Select.Option>
@@ -91,7 +87,7 @@ const FormComponent = () => {
           }}
         ></div>
         <Form.Item
-          label="Bu tarixdən"
+          label={t("dateLabel")}
           name="DatePicker"
           rules={[
             {
@@ -99,16 +95,11 @@ const FormComponent = () => {
             },
           ]}
         >
-          <DatePicker
-            placeholder="Tarixi seç"
-          />
+          <DatePicker placeholder={t("datePlaceholder")} />
         </Form.Item>
         <Form.Item style={{ paddingTop: "0 !important" }}>
-          <Button
-            type="primary"
-            htmlType="submit"
-          >
-            Göndər
+          <Button type="primary" htmlType="submit">
+            {t("submit")}
           </Button>
         </Form.Item>
       </Form>

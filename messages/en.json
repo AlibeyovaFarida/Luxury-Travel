@@ -73,5 +73,45 @@
     "subtitle4": "3 Steps",
     "slide4_1": "Berlin",
     "slide4_2": "Paris"
+  },
+  "CountriesComponent": {
+    "Maldivs": "Maldivs",
+    "Turkey": "Turkey",
+    "Dubai": "Dubai",
+    "Singapur": "Singapur",
+    "Italia": "Italia",
+    "China": "China",
+    "Barcelona": "Barcelona"
+  },
+  "GoldButtonComponent": {
+    "title": "Contact us"
+  },
+  "TransparentButtonComponent": {
+    "title": "Create Your Experience"
+  },
+  "ContactComponent": {
+    "title": "Contact",
+    "subtitle": "Contact Us",
+    "description": "If you have any questions, don't hesitate to contact us. By contacting you, you can make your travel plans more convenient and quality.",
+    "location": "Mehdi Mehdizade 8, Baku, Azerbaijan",
+    "clock": "Every day from 08:00 to 00:00"
+  },
+  "FooterComponent": {
+    "title": "Contact us",
+    "locationPart1": "Mehdi Mehdizade 8, Baku,",
+    "locationPart2": "Azerbaijan",
+    "clock": "Everyday from 10 am to 8 pm"
+  },
+  "FormComponent": {
+    "phoneLabel": "Phone number",
+    "countryLabel": "Country",
+    "countryPlaceholder": "Select country",
+    "dateLabel": "From this date",
+    "datePlaceholder": "Select a date",
+    "submit": "Send",
+    "phoneInputShortValidation": "Please input",
+    "phoneInputValidation":"Please input a valid phone number in the format +000 (00) 000-00-00",
+    "countryInputValidation":"Please select a country",
+    "dateInputValidation": "Please select a date"
   }
 }

@@ -57,7 +57,7 @@
     "statistic3": "Xoşbəxt Müştəri",
     "statistic4": "Premium Turlar"
   },
-  "SliderComponent":{
+  "SliderComponent": {
     "title": "Tur paketləri",
     "subtitle1": "Klassika",
     "slide1_1": "Dubay",
@@ -73,5 +73,45 @@
     "subtitle4": "3 Addım",
     "slide4_1": "Berlin",
     "slide4_2": "Paris"
+  },
+  "CountriesComponent": {
+    "Maldivs": "Maldivlər",
+    "Turkey": "Türkiyə",
+    "Dubai": "Dubay",
+    "Singapur": "Sinqapur",
+    "Italia": "İtaliya",
+    "China": "Çin",
+    "Barcelona": "Barselona"
+  },
+  "GoldButtonComponent": {
+    "title": "Əlaqə Saxlayın"
+  },
+  "TransparentButtonComponent": {
+    "title": "Öz Təcrübəni Yarat"
+  },
+  "ContactComponent": {
+    "title": "Əlaqə",
+    "subtitle": "Bizimlə Əlaqə Saxlayın",
+    "description": "Sualınız varsa, bizə müraciət etməkdən çəkinməyin. Sizinlə əlaqə saxlayaraq səyahət planlarınızı daha rahat və xoş edə bilərik.",
+    "location": "Mehdi Mehdizade küçəsi 8, Bakı, Azərbaycan",
+    "clock": "Hər gün saat 08:00 dan 00:00 kimi"
+  },
+  "FooterComponent": {
+    "title": "Əlaqə Saxlayın",
+    "locationPart1":"Mehdi Mehdizade küçəsi 8, Bakı",
+    "locationPart2":" Azərbaycan",
+    "clock": "Hər gün səhər 10-dan axşam 8-ə qədər"
+  },
+  "FormComponent": {
+    "phoneLabel": "Mobil nömrə",
+    "countryLabel": "Ölkə",
+    "countryPlaceholder": "Ölkəni seç",
+    "dateLabel": "Bu tarixdən",
+    "datePlaceholder": "Tarixi seç",
+    "submit": "Göndər",
+    "phoneInputShortValidation": "Nömrə daxil edin",
+    "phoneInputValidation": "+000 (00) 000-00-00 formatında etibarlı telefon nömrəsini daxil edin",
+    "countryInputValidation": "Zəhmət olmasa ölkə seçin",
+    "dateInputValidation": "Zəhmət olmasa bir tarix seçin"
   }
 }

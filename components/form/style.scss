@@ -48,6 +48,7 @@
 }
 @media (min-width: 1024px) {
   .ant-form.ant-form-vertical.desktop {
+    max-height: 124.3px;
     padding: 0;
     box-shadow: 0px 2px 4px 0px rgba(20, 20, 20, 0.25);
     border-radius: 10px;
@@ -69,7 +70,7 @@
     }
     .ant-form-item {
       margin: 0 !important;
-      padding-top: 16.8px;
+      // padding-top: 16.8px;
     }
     .ant-input {
       width: 240px;
@@ -97,7 +98,9 @@
     }
     .ant-btn {
       width: 180px;
-      height: 102.3px;
+      max-height: 124.3px;
+      min-height: 102.3px;
+      height: auto;
       font-size: 19.2px;
       color: white;
       border: none;

@@ -2,13 +2,13 @@
   display: none;
   margin-top: 45px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   max-width: 1487px;
   .about-desc {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
+    padding: 0 48px;
     gap: 40px;
     .about-desc-text {
       h4 {
@@ -46,13 +46,13 @@
   .about {
     margin-top: 30px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     max-width: 1487px;
     .about-desc {
       width: 100%;
       display: flex;
       flex-direction: column;
-      padding: 0 48px;
+      // padding: 0 48px;
       gap: 40px;
       .about-desc-text {
         h4 {
@@ -135,12 +135,13 @@
   .about {
     margin-top: 100px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     max-width: 1487px;
     padding: 0 144px;
     .about-desc {
+      padding: 0;
       width: 50%;
-      margin-right: 40px;
+      margin-right: 10px;
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -240,7 +241,10 @@
     }
     .about-wrapper {
       display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
       width: 50%;
+      height: 755px;
       img {
         width: 100%;
         height: 100%;

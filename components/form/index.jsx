@@ -89,6 +89,7 @@ const FormComponent = () => {
         <Form.Item
           label={t("dateLabel")}
           name="DatePicker"
+          className=''
           rules={[
             {
               validator: validateDate,

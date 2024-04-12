@@ -1,10 +1,9 @@
+@import "../../scss/mixin.scss";
 .gold-button{
     cursor: pointer;
     padding: 15px 56px;
     border-radius: 3px;
     border: none;
     background: linear-gradient(90deg, #694323 0%, #cca44f 100%);
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
+    @include font(#fff, 16px, 700, null);
 }

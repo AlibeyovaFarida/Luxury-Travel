@@ -1,5 +1,4 @@
+@import "../../../scss/mixin.scss";
 .contact{
-    display: flex;
-    align-items: center;
-    gap: 18px;
+    @include flex(center, null, null, 18px);
 }

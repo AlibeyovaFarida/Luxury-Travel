@@ -1,3 +1,4 @@
+@import "../../../scss/mixin.scss";
 .navbar {
   display: none;
 }
@@ -6,13 +7,10 @@
     display: block;
     .navbar-list {
       max-width: 512px;
-      display: flex;
-      gap: 22px;
+      @include flex(null, null, null, 22px);
       .list-item {
         a {
-          color: #ffffff;
-          font-size: 12.8px;
-          font-weight: 700;
+          @include font(#fff, 12.8px, 700, null);
         }
       }
       .list-item:nth-child(5) {

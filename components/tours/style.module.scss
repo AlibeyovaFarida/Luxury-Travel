@@ -1,3 +1,4 @@
+@import '../../scss/mixin.scss';
 .tours {
   margin-top: 60px;
   max-width: 1624px;
@@ -10,22 +11,14 @@
     padding: 0 10px;
     .tours-about {
       h4 {
-        font-size: 13px;
-        font-weight: 600;
-        background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include font(null, 13px, 600, null);
+        @include gradient-text-270;
       }
       h2 {
-        color: #020d19;
-        font-size: 20px;
-        font-weight: 700;
+        @include font(#020d19, 20px, 700, null);
       }
       p {
-        color: #020d19;
-        font-size: 16px;
-        font-weight: 400;
+        @include font(#020d19, 16px, 400, null);
       }
     }
     .tours-statistics {
@@ -46,13 +39,11 @@
           margin-bottom: 5px
         }
         h2 {
-          color: #ffffff;
-          font-size: 38.4px;
+          @include font(#fff, 38.4px, null, null);
           margin-bottom: 20px
         }
         p {
-          color: #ffffff;
-          font-size: 12.8px;
+          @include font(#fff, 12.8px, null, null);
         }
       }
     }
@@ -68,9 +59,7 @@
     .tours-wrapper {
       padding: 5% 0;
       padding-right: 50px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+      @include flex(center, flex-end, null, null);
       width: 60%;
       border-radius: 0px 1000px 1000px 0px;
       background: linear-gradient(90deg, #73432e 0%, #e9d56d 100%);
@@ -88,20 +77,16 @@
       padding-top: 17px;
       padding-left: 13px;
       width: 52%;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
+      @include flex(null, null, column, 40px);
       .tours-about {
         h4 {
           font-size: 19.2px;
         }
         h2 {
-          color: #020d19;
-          font-size: 38.4px;
+          @include font(#020d19, 38.4px, null, null);
         }
         p {
-          color: #020d19;
-          font-size: 12.8px;
+          @include font(#020d19, 12.8px, null, null);
         }
       }
       .tours-statistics {
@@ -114,25 +99,13 @@
           border-radius: 10px;
           box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.15);
           .statistic-data {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 2px;
+            @include flex(center, null, column, 2px);
             h2 {
-              font-size: 32px;
-              font-weight: 700;
-              background: var(
-                --Button-color,
-                linear-gradient(90deg, #694323 0%, #cca44f 100%)
-              );
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
+              @include font(null, 32px, 700, null);
+              @include gradient-text-90;
             }
             h4 {
-              color: #020d19;
-              font-size: 16px;
-              font-weight: 600;
+              @include font(#020d19, 16px, 600, null);
               text-align: center;
               white-space: nowrap;
             }

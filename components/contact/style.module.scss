@@ -1,46 +1,31 @@
+@import "../../scss/mixin.scss";
 .contact {
   margin-top: 55px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  @include flex(null, null, column, 20px);
   max-width: 1172px;
   padding: 0 10px;
   .contact-data {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    @include flex(null, null, column, 5px);
     .contact-data-text {
       h4 {
-        font-size: 13px;
-        font-weight: 600;
-        background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include font(null, 13px, 600, null);
+        @include gradient-text-270;
       }
       h2 {
-        color: #000;
-        font-size: 20px;
-        font-weight: 700;
+        @include font(#000, 20px, 700, null);
       }
       p {
         display: none;
       }
     }
     .contact-links {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+      @include flex(null, null, column, 5px);
       li,
       li > a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
+        @include flex(center, null, null, 5px);
         span {
-          color: #020d19;
-          font-size: 13px;
-          font-weight: 400;
+          @include font(#020d19, 13px, 400, null);
         }
         img{
             width: 16px;
@@ -69,9 +54,7 @@
         p {
           margin-bottom: 38px;
           display: block;
-          color: #000;
-          font-size: 16px;
-          font-weight: 400;
+          @include font(#000, 16px, 400, null);
           opacity: 0.5;
         }
       }
@@ -97,8 +80,7 @@
 @media (min-width: 1024px) {
   .contact {
     margin-top: 100px;
-    display: flex;
-    flex-direction: row;
+    @include flex(null, null, row, null);
     padding: 0 144px;
     .contact-data {
       width: 50%;

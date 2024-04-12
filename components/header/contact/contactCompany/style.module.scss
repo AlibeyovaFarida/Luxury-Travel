@@ -1,20 +1,16 @@
+@import "../../../../scss/mixin.scss";
 .contact-company {
   display: none;
 }
 @media (min-width: 1024px) {
   .contact-company {
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    font-size: 12.8px;
-    font-weight: 600;
+    @include flex(flex-end, null, null, 10px);
+    @include font(null, 12.8px, 600, null);
     .operator {
-      display: flex;
-      align-items: flex-end;
+      @include flex(flex-end, null, null, null);
     }
     .contact-number {
-      display: flex;
-      flex-direction: column;
+      @include flex(null,  null, column, null);
       color: #ffffff;
     }
   }

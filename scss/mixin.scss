@@ -1,0 +1,32 @@
+@mixin gradient-text-270{
+    background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin gradient-text-90{
+    background: linear-gradient(90deg, #694323 0%, #cca44f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin gradient-text-180{
+    background: linear-gradient(180deg, #694323 0%, #cca44f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin flex($alignItems: null, $justifyContent: null, $flexDirection: null, $gap: null){
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+    flex-direction: $flexDirection;
+    gap: $gap;
+}
+@mixin font($color: null, $fontSize: null, $fontWeight: null, $lineHeight: null){
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}

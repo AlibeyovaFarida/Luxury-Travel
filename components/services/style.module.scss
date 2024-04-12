@@ -1,24 +1,17 @@
+@import '../../scss/mixin.scss';
 .services {
   padding: 0 10px;
   margin-top: 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, center, column, null);
   max-width: 1487px;
   .services-title {
-    background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 13px;
-    font-weight: 600;
+    @include gradient-text-270;
+    @include font(null, 13px, 600, null);
     text-align: center;
     margin-bottom: 5px;
   }
   .services-motto {
-    font-size: 20px;
-    font-weight: 700;
+    @include font(null, 20px, 700, null);
     text-align: center;
     margin-bottom: 20px;
   }

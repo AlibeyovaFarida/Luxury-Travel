@@ -1,3 +1,4 @@
+@import "../../scss/mixin.scss";
 .main {
   display: none;
 }
@@ -11,22 +12,14 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 100px;
+    @include flex(flex-start, center, column, 100px);
     padding: 0 6%;
-    align-items: flex-start;
     .company-desc {
       max-width: 1536px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+      @include flex(null, null, column, 15px);
       .motto {
-        font-size: 32px;
         text-align: left;
-        font-weight: 700;
-        color: #ffffff;
+        @include font(#fff, 32px, 700, null);
         .gold {
           background: linear-gradient(to right, #cca34e, #cca44f);
           -webkit-background-clip: text;
@@ -34,17 +27,10 @@
         }
       }
       .advantages-list {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 10px;
+        @include flex(center, flex-start, null, 10px);
         .advantage {
-          font-size: 16px;
-          font-weight: 600;
-          color: #ffffff;
-          display: flex;
-          align-items: center;
-          gap: 5px;
+          @include font(#fff, 16px, 600, null);
+          @include flex(center, null, null, 5px);
           img{
             width: 16px;
             height: 16px;
@@ -63,9 +49,7 @@
         text-align: center;   
       }
       .advantages-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(center, center, null, null);
         .advantage {
           font-size: 19.2px;
           img{

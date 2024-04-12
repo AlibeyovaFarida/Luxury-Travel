@@ -1,3 +1,4 @@
+@import '../../scss/mixin.scss';
 .swiper {
   display: none;
 }
@@ -16,11 +17,7 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center, null, null);
   }
 
   .swiper-slide {
@@ -37,33 +34,22 @@
     padding-top: 20px;
     padding-bottom: 45px;
     .slide1-header {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+      @include flex(null, null, column, 5px);
       margin-bottom: 36px;
       h4 {
-        font-size: 16px;
-        font-weight: 700;
-        background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include font(null, 16px, 700, null);
+        @include gradient-text-270;
       }
       h2 {
-        color: #fff;
         text-align: center;
         font-family: Poppins;
-        font-size: 38.4px;
         font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        @include font(#fff, 38.4px, 700, normal)
       }
     }
     .slide1-images {
       padding: 0 40px;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
+      @include flex(null, center, null, 1rem);
       width: 100%;
       div {
         width: 22%;
@@ -77,10 +63,8 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          color: #fff;
           text-align: center;
-          font-size: 28px;
-          font-weight: 700;
+          @include font(#fff, 28px, 700, null);
         }
       }
     }
@@ -94,30 +78,20 @@
     width: 100%;
     height: fit-content;
     .slide2-header {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+      @include flex(null, null, column, 5px);
       margin-bottom: 36px;
       h4 {
-        font-size: 16px;
-        font-weight: 700;
-        background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include font(null, 16px, 700, null);
+        @include gradient-text-270;
       }
       h2 {
-        color: #b25858;
         text-align: center;
-        font-size: 38.4px;
-        font-weight: 700;
+        @include font(#b25858, 38.4px, 700, null);
       }
     }
     .slide2-images {
       padding: 0 40px;
-      display: flex;
-      justify-content: center;
-      gap: 5rem;
+      @include flex(null, center, null, 5rem);
       width: 100%;
       div {
         width: 42.2%;
@@ -131,10 +105,8 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          color: #fff;
           text-align: center;
-          font-size: 42px;
-          font-weight: 700;
+          @include font(#fff, 42px, 700, null);
         }
       }
     }
@@ -149,30 +121,20 @@
     width: 100%;
     height: fit-content;
     .slide3-header {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+      @include flex(null, null, column, 5px);
       margin-bottom: 36px;
       h4 {
-        font-size: 16px;
-        font-weight: 700;
-        background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include font(null, 16px, 700, null);
+        @include gradient-text-270;
       }
       h2 {
-        color: #000;
         text-align: center;
-        font-size: 38.4px;
-        font-weight: 700;
+        @include font(#000, 38.4px, 700);
       }
     }
     .slide3-images {
       padding: 0 40px;
-      display: flex;
-      justify-content: center;
-      gap: 5rem;
+      @include flex(null, center, null, 5rem);
       width: 100%;
       div {
         width: 42.2%;
@@ -186,10 +148,8 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          color: #fff;
           text-align: center;
-          font-size: 42px;
-          font-weight: 700;
+          @include font(#fff, 42px, 700, null);
         }
       }
     }
@@ -203,30 +163,20 @@
     width: 100%;
     height: fit-content;
     .slide4-header {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+      @include flex(null, null, column, 5px);
       margin-bottom: 36px;
       h4 {
-        font-size: 16px;
-        font-weight: 700;
-        background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include font(null, 16px, 700, null);
+        @include gradient-text-270;
       }
       h2 {
-        color: #000;
         text-align: center;
-        font-size: 38.4px;
-        font-weight: 700;
+        @include font(#000, 38.4px, 700, null);
       }
     }
     .slide4-images {
       padding: 0 40px;
-      display: flex;
-      justify-content: center;
-      gap: 5rem;
+      @include flex(null, center, null, 5rem);
       width: 100%;
       div {
         width: 42.2%;
@@ -240,10 +190,8 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          color: #fff;
           text-align: center;
-          font-size: 42px;
-          font-weight: 700;
+          @include font(#fff, 42px, 700, null);
         }
       }
     }

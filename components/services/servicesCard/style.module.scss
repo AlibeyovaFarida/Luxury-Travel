@@ -1,24 +1,18 @@
+@import '../../../scss/mixin.scss';
 .services-card {
   padding: 20px 7px 5px 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.15);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flex(null, space-between, column, null);
   .card-title {
     margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 600;
+    @include font(null, 20px, 600, null);
   }
   .card-desc {
-    font-size: 14px;
-    color: #020d19;
+    @include font(#020d19, 14px, null, null);
   }
   .card-number {
-    background: linear-gradient(180deg, #694323 0%, #cca44f 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    @include gradient-text-180;
     font-size: 32px;
     align-self: flex-end;
   }

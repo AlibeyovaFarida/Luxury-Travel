@@ -1,3 +1,4 @@
+@import "../../scss/mixin.scss";
 .header{
     position: fixed;
     z-index: 10;
@@ -5,14 +6,11 @@
     top: 0;
     background-color: #141414;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center, null, null);
     .header-components{
         max-width: 1512px;
         width: 100%;
         padding: 6px 26px 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex(center, space-between, null, null);
     }
 }

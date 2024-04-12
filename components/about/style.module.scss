@@ -1,34 +1,26 @@
+@import "../../scss/mixin.scss";
 .about {
-  display: none;
   margin-top: 45px;
-  display: flex;
-  align-items: flex-start;
+  @include flex(flex-start,null, null, null);
   max-width: 1487px;
   .about-desc {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     padding: 0 48px;
-    gap: 40px;
+    @include flex(null,null, column, 40px);
     .about-desc-text {
       h4 {
-        background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 13px;
-        font-weight: 600;
+        @include gradient-text-270;
+        @include font(null, 13px, 600, null);
       }
       h2 {
-        font-size: 20px;
-        font-weight: 700;
-        color: #020d19;
+        @include font(#020d19, 20px, 700, null);
       }
       p {
         color: #020d19;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
+        @include font(#020d19, 14px, 400, 24px);
       }
     }
     .about-desc-advantages {
@@ -45,86 +37,49 @@
 @media (min-width: 430px) {
   .about {
     margin-top: 30px;
-    display: flex;
-    align-items: flex-start;
+    @include flex(flex-start,null, null, null);
     max-width: 1487px;
     .about-desc {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      // padding: 0 48px;
-      gap: 40px;
+      @include flex(null,null, column, 40px);
       .about-desc-text {
         h4 {
-          background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-size: 19.2px;
-          font-weight: 600;
+          @include gradient-text-270;
+          @include font(null, 19.2px, 600, null);
         }
         h2 {
-          font-size: 38.4px;
-          font-weight: 700;
-          color: #020d19;
+          @include font(#020d19, 38.4px, 700, null);
         }
         p {
-          color: #020d19;
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 24px;
+          @include font(#020d19, 15px, 400, 24px)
         }
       }
       .about-desc-advantages {
-        display: flex;
-        justify-content: space-between;
+        @include flex(null, space-between, null, null);
         .about-advantages-list {
-          display: flex;
-          flex-direction: column;
-          gap: 22.4px;
+          @include flex(null, null, column, 22.4px);
           .advantage-item {
-            display: flex;
-            gap: 10px;
-            align-items: center;
+            @include flex(center, null, null, 10px);
             h5 {
-              background: var(
-                --Button-color,
-                linear-gradient(90deg, #694323 0%, #cca44f 100%)
-              );
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              font-size: 14.4px;
-              font-weight: 600;
+              @include gradient-text-90;
+              @include font(null, 14.4px, 600, null)
             }
           }
         }
         .about-company-history {
           background: linear-gradient(180deg, #fff 0%, #fff4e4 100%);
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
+          @include flex(flex-start, center, column, null);
           padding: 0 37px;
           border-top: 17.143px solid;
           border-image: linear-gradient(90deg, #694323 0%, #cca44f 100%);
           border-image-slice: 1;
           border-radius: 3px;
           h5 {
-            color: #020d19;
-            font-size: 16px;
-            font-weight: 600;
+            @include font(#020d19, 16px, 600, null)
           }
           span {
-            background: var(
-              --Button-color,
-              linear-gradient(90deg, #694323 0%, #cca44f 100%)
-            );
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 72px;
-            font-weight: 600;
+            @include gradient-text-90;
+            @include font(null, 72px, 600, null)
           }
         }
       }
@@ -134,88 +89,52 @@
 @media (min-width: 1024px) {
   .about {
     margin-top: 100px;
-    display: flex;
-    align-items: flex-start;
+    @include flex(flex-start,null, null, null);
     max-width: 1487px;
     padding: 0 144px;
     .about-desc {
       padding: 0;
       width: 50%;
       margin-right: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
+      @include flex(null, null, column, 40px);
       .about-desc-text {
         h4 {
-          background: linear-gradient(270deg, #cca34e 0%, #cca44f 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-size: 19.2px;
-          font-weight: 600;
+          @include gradient-text-270;
+          @include font(null, 19.2px, 600, null);
         }
         h2 {
-          font-size: 38.4px;
-          font-weight: 700;
-          color: #020d19;
+          @include font(#020d19, 38.4px, 700, null);
         }
         p {
-          color: #020d19;
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 24px;
+          @include font(#020d19, 15px, 400, 24px);
         }
       }
       .about-desc-advantages {
-        display: flex;
-        justify-content: space-between;
+        @include flex(null, space-between, null, null);
         .about-advantages-list {
-          display: flex;
-          flex-direction: column;
-          gap: 22.4px;
+          @include flex(null, null, column, 22.4px);
           .advantage-item {
-            display: flex;
-            gap: 10px;
-            align-items: center;
+            @include flex(center, null, null, 10px);
             h5 {
-              background: var(
-                --Button-color,
-                linear-gradient(90deg, #694323 0%, #cca44f 100%)
-              );
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              font-size: 14.4px;
-              font-weight: 600;
+              @include gradient-text-90;
+              @include font(null, 14.4px, 600, null);
             }
           }
         }
         .about-company-history {
           background: linear-gradient(180deg, #fff 0%, #fff4e4 100%);
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
+          @include flex(flex-start, center, column, null);
           padding: 0 37px;
           border-top: 17.143px solid;
           border-image: linear-gradient(90deg, #694323 0%, #cca44f 100%);
           border-image-slice: 1;
           border-radius: 3px;
           h5 {
-            color: #020d19;
-            font-size: 16px;
-            font-weight: 600;
+            @include font(#020d19, 16px, 600, null)
           }
           span {
-            background: var(
-              --Button-color,
-              linear-gradient(90deg, #694323 0%, #cca44f 100%)
-            );
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 72px;
-            font-weight: 600;
+            @include gradient-text-90;
+            @include font(null, 72px, 600, null);
           }
         }
       }
@@ -225,24 +144,17 @@
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        @include flex(flex-start, center, column, null);
         padding: 17px 23px 23px 24px;
         border-radius: 3px;
         h4 {
-          color: #fff;
-          font-size: 28px;
-          font-weight: 700;
+          @include font(#fff, 28px, 700, null);
           margin-bottom: 5px;
         }
       }
     }
     .about-wrapper {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
+      @include flex(flex-start, flex-start, null, null);
       width: 50%;
       height: 755px;
       img {

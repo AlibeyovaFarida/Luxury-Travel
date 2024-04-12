@@ -1,13 +1,10 @@
+@import "../../../../scss/mixin.scss";
 .language-change{
     position: relative;
     .selected-language{
         cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 12.8px;
-        color: #FFF;
-        font-size: 12.8px;
-        font-weight: 600;
+        @include flex(center, null, null, 12.8px);
+        @include font(#fff, 12.8px, 600, null);
         border-radius: 5px;
         border: 1px solid rgba(255, 255, 255, 0.25);
         background-color: #141414;
@@ -35,13 +32,11 @@
             cursor: pointer;
             background-color: transparent;
             border: none;
-            color: #FFF;
-            font-size: 12.8px;
+            @include font(#fff, 12.8px, 600, null);
             padding-left: 10px;
             padding-top: 5px;
             padding-bottom: 8px;
             text-align: left;
-            font-weight: 600;
         }
         .unselectable-language{
             display: none;

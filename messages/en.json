@@ -81,7 +81,10 @@
     "Singapur": "Singapur",
     "Italia": "Italia",
     "China": "China",
-    "Barcelona": "Barcelona"
+    "Barcelona": "Barcelona",
+    "Tbilisi": "Tbilisi",
+    "Doha": "Doha"
+
   },
   "GoldButtonComponent": {
     "title": "Contact us"
@@ -112,6 +115,10 @@
     "phoneInputShortValidation": "Please input",
     "phoneInputValidation":"Please input a valid phone number in the format +000 (00) 000-00-00",
     "countryInputValidation":"Please select a country",
-    "dateInputValidation": "Please select a date"
+    "countryInputSecondValidation":"Please select valid country",
+    "dateInputValidation": "Please select a date",
+    "AfterTodayValidation": "Please select valid date",
+    "mailSuccess": "Information sent"
+
   }
 }

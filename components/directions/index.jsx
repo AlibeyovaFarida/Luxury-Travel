@@ -20,38 +20,47 @@ const Directions = () => {
     {
       image: Maldivs,
       title: t("Maldivs"),
+      country: "Maldives",
     },
     {
       image: Turkey,
       title: t("Turkey"),
+      country: "Turkey",
     },
     {
       image: Doha,
-      title: "Doha",
+      title: t("Doha"),
+      country: "Qatar",
     },
     {
       image: Dubai,
       title: t("Dubai"),
+      country: "United Arab Emirates",
     },
     {
       image: Tbilisi,
-      title: "Tbilisi",
+      title: t("Tbilisi"),
+      country: "Georgia",
     },
     {
       image: Singapur,
       title: t("Singapur"),
+      country: "Singapore",
     },
     {
       image: Italy,
       title: t("Italia"),
+      country: "Italy",
     },
     {
       image: China,
       title: t("China"),
+      country: "China",
     },
     {
       image: Barcelona,
       title: t("Barcelona"),
+      country: "Spain",
     },
   ];
   return (
@@ -64,7 +73,7 @@ const Directions = () => {
             </div>
             <div className={styles["direction-card-desc"]}>
               <h3>{directionCard.title}</h3>
-              <TransparentButton/>
+              <TransparentButton country={directionCard.country} />
             </div>
           </div>
         );

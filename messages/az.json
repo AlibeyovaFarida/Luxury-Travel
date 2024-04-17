@@ -81,7 +81,10 @@
     "Singapur": "Sinqapur",
     "Italia": "İtaliya",
     "China": "Çin",
-    "Barcelona": "Barselona"
+    "Barcelona": "Barselona",
+    "Tbilisi": "Tbilisi",
+    "Doha": "Doha"
+
   },
   "GoldButtonComponent": {
     "title": "Əlaqə Saxlayın"
@@ -112,6 +115,9 @@
     "phoneInputShortValidation": "Nömrə daxil edin",
     "phoneInputValidation": "+000 (00) 000-00-00 formatında etibarlı telefon nömrəsini daxil edin",
     "countryInputValidation": "Zəhmət olmasa ölkə seçin",
-    "dateInputValidation": "Zəhmət olmasa bir tarix seçin"
+    "countryInputSecondValidation": "Zəhmət olmasa uyğun ölkə seçin",
+    "dateInputValidation": "Zəhmət olmasa bir tarix seçin",
+    "AfterTodayValidation": "Zəhmət olmasa uyğun bir tarix seçin",
+    "mailSuccess": "Məlumatlar göndərildi"
   }
 }

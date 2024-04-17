@@ -7,9 +7,6 @@ import Services from "@/components/services";
 import Slider from "@/components/slider";
 import Tours from "@/components/tours";
 
-
-
-
 export default function Home() {
   return (
     <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>

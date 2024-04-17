@@ -69,10 +69,24 @@ const LanguageChange = () => {
         >
           AZ
         </button>
+        <button
+          value={"ru"}
+          className={
+            lang == "RU"
+              ? `${styles["unselectable-language"]}`
+              : `${styles["selectable-language"]}`
+          }
+          onClick={(e) => {
+            setLang("RU");
+            handleChange();
+            onSelectChange(e)
+          }}
+        >
+          RU
+        </button>
       </div>
     </div>
   );
 };
-// ${styles['show']}
-// ${styles["active"]}
+
 export default LanguageChange;

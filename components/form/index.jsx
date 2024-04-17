@@ -1,11 +1,36 @@
 'use client'
-import React, { useRef } from 'react'
-import { DatePicker, Form, Input, Select, Button } from "antd";
+import React, { useState, useRef, useEffect } from 'react'
+import { DatePicker, Form, Input, Select, Button, message } from "antd";
 import './style.scss'
 import { useTranslations } from 'next-intl';
+
+const { Option } = Select;
+
 const FormComponent = () => {
     const t = useTranslations("FormComponent");
     const formRef = useRef();
+    const [countries, setCountries] = useState([]); 
+    
+    const fetchCountries = async () => {
+        try {
+            const response = await fetch('https://restcountries.com/v3.1/all');
+            if (response.ok) {
+                let data = await response.json();
+                data = data.filter(country => country.name.common !== "Armenia");
+                const sortedCountries = data.map(country => country.name.common).sort(); // Ülkeleri alfabetik olarak sırala
+                setCountries(sortedCountries);
+            } else {
+                console.error('REST COUNTRİES APİSİNDƏ XƏTA');
+            }
+        } catch (error) {
+            console.error('REST COUNTRİES APİSİNDƏ XƏTA', error);
+        }
+    };
+
+    useEffect(() => {
+        fetchCountries();
+    }, []);
+    
     const validatePhoneNumber = (_, value) => {
       return new Promise((resolve, reject) => {
         const phoneNumberRegex = /^\+\d{3} \(\d{2}\) \d{3}-\d{2}-\d{2}$/;
@@ -20,23 +45,64 @@ const FormComponent = () => {
       if (!value) {
         return Promise.reject(t("countryInputValidation"));
       }
+      if (!countries.includes(value)) {
+        return Promise.reject(t("countryInputSecondValidation"));
+      }
       return Promise.resolve();
     };
     const validateDate = (_, value) => {
       if (!value) {
         return Promise.reject(t("dateInputValidation"));
       }
+      const date = new Date(value)
+      const today = new Date()
+      if (today>date){
+        return Promise.reject(t("AfterTodayValidation"));
+      }
       return Promise.resolve();
     };
-    const handleFinish = (values) => {
-      formRef.current.resetFields();
+    const handleSubmit = async (values) => {
+      try {
+        const { Input, Select, DatePicker } = values;
+    
+        let date = new Date(DatePicker);
+        date.setHours(date.getHours() + 4);
+        const newDate = new Date(date.toISOString());
+        
+        const apiKey = process.env.API_KEY;
+    
+        const response = await fetch('/api/add-contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': apiKey 
+          },
+          body: JSON.stringify({
+            phone: Input,
+            country: Select,
+            date: newDate,
+          }),
+        });
+    
+        if (response.ok) {
+          message.success(t('mailSuccess'));
+          formRef.current.resetFields();
+          console.log('DAta uğurla əlavə edildi!');
+        } else {
+          console.error('Datalarda xəta');
+        }
+      } catch (error) {
+        console.error('Datalarda xəta:', error);
+      }
     };
+    
+    
   return (
     <>
       <Form
         ref={formRef}
         layout="vertical"
-        onFinish={handleFinish}
+        onFinish={handleSubmit}
         className="desktop"
       >
         <Form.Item
@@ -69,11 +135,9 @@ const FormComponent = () => {
           ]}
         >
           <Select placeholder={t("countryPlaceholder")}>
-            <Select.Option value="Azerbaijan">Azerbaijan</Select.Option>
-            <Select.Option value="Turkey">Turkey</Select.Option>
-            <Select.Option value="Maldives">Maldives</Select.Option>
-            <Select.Option value="Cuba">Cuba</Select.Option>
-            <Select.Option value="Italy">Italy</Select.Option>
+            {countries.map(country => (
+              <Option key={country} value={country}>{country}</Option>
+            ))}
           </Select>
         </Form.Item>
         <div
